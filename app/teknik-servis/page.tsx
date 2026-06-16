@@ -93,7 +93,7 @@ export default function TeknikServisPage() {
           <p style={{ opacity: 0.8, marginBottom: 24, fontSize: 15, margin: "0 0 24px" }}>
             Aşağıdaki numarayı arayın veya WhatsApp ile mesaj gönderin.
           </p>
-          <a href="tel:+905510244156" style={{
+          <a href="https://wa.me/905510244156" target="_blank" rel="noopener noreferrer" style={{
             display: "inline-flex", alignItems: "center", gap: 8,
             background: "white", color: "#1E3A8A", textDecoration: "none",
             padding: "14px 28px", borderRadius: 10, fontWeight: 700, fontSize: 16,

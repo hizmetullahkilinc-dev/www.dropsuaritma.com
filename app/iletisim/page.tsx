@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 const contactInfo = [
   { label: "📍 Adres", value: "İstanbul", bg: "#E2E8F0" },
-  { label: "📞 Telefon", value: "0551 024 41 56 — Hizmetullah Kılınç", bg: "#DCFCE7", href: "tel:+905510244156", bold: true },
+  { label: "📞 Telefon", value: "0551 024 41 56 — Hizmetullah Kılınç", bg: "#DCFCE7", href: "https://wa.me/905510244156", bold: true },
   { label: "✉  E-posta", value: "info@dropsuaritma.com", bg: "#EFF6FF", href: "mailto:info@dropsuaritma.com" },
   { label: "🕐 Çalışma Saatleri", value: "Pazartesi – Cumartesi: 09:00 – 19:00", bg: "#FEF3C7", bold: true },
 ];
@@ -37,7 +37,7 @@ export default function IletisimPage() {
 
           <div style={{ marginTop: 32, padding: "24px", background: "linear-gradient(135deg,#1E3A8A,#16A34A)", borderRadius: 12, textAlign: "center" }}>
             <p style={{ color: "white", fontSize: 15, fontWeight: 600, margin: "0 0 14px" }}>Hemen Arayın</p>
-            <a href="tel:+905510244156" style={{
+            <a href="https://wa.me/905510244156" target="_blank" rel="noopener noreferrer" style={{
               display: "inline-flex", alignItems: "center", gap: 8,
               background: "white", color: "#1E3A8A", textDecoration: "none",
               padding: "12px 24px", borderRadius: 8, fontWeight: 700, fontSize: 16,

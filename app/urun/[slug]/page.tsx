@@ -123,7 +123,7 @@ export default async function ProductPage({ params }: Props) {
               <p style={{ margin: "0 0 14px", fontSize: 14, color: "#166534", lineHeight: 1.5 }}>
                 Güncel fiyat ve stok bilgisi için lütfen bizi arayın. Ücretsiz keşif imkânı.
               </p>
-              <a href="tel:+905510244156" style={{
+              <a href="https://wa.me/905510244156" target="_blank" rel="noopener noreferrer" style={{
                 display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
                 background: "#16A34A", color: "white", textDecoration: "none",
                 padding: "13px 20px", borderRadius: 10, fontWeight: 700, fontSize: 15,

@@ -290,7 +290,7 @@ export default function HomePage() {
             Ücretsiz keşif için bizi arayın — aynı gün randevu imkânı.
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="tel:+905510244156" style={{
+            <a href="https://wa.me/905510244156" target="_blank" rel="noopener noreferrer" style={{
               background: "white", color: "#1E3A8A", textDecoration: "none",
               padding: "14px 28px", borderRadius: 10, fontWeight: 700, fontSize: 15,
               display: "inline-flex", alignItems: "center", gap: 8,
