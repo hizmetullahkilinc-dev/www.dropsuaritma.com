@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-primary: #2563eb;
+  --color-primary-dark: #1e3a8a;
+  --color-secondary: #16a34a;
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #0f172a;
+  font-family: Inter, var(--font-sans), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
+
+/* Responsive: hide desktop nav on mobile */
+@media (max-width: 768px) {
+  .desktop-nav       { display: none !important; }
+  .hamburger         { display: flex !important; }
+  .desktop-sidebar   { display: none !important; }
+  .mobile-filter-btn { display: flex !important; }
+  .topbar-hours      { display: none !important; }
+  /* Grid: single-column on mobile */
+  .hero-grid         { grid-template-columns: 1fr !important; padding: 48px 24px !important; }
+  .hero-visual       { display: none !important; }
+  .why-us-grid       { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .product-main-grid { grid-template-columns: 1fr !important; }
+  .category-grid     { grid-template-columns: 1fr !important; }
+}
+
+/* Hero animations */
+@keyframes heroFadeUp {
+  from { transform: translateY(22px); }
+  to   { transform: none; }
+}
+.hero-enter-1 { animation: heroFadeUp 0.7s ease; }
+.hero-enter-2 { animation: heroFadeUp 0.9s 0.15s ease; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-enter-1, .hero-enter-2 { animation: none; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #F8FAFC; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+:focus-visible { outline: 2px solid #2563EB; outline-offset: 2px; }
+
+a { transition: opacity 0.15s; }
